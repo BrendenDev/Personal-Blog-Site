@@ -1,12 +1,22 @@
+@font-face {
+    font-family:'SWLink';
+    src: url('C:\Users\17204\Desktop\Desktop\Coding\BlogPage\SWLink.ttf') format('truetype');
+}
+
 body {
-font-family: Arial, sans-serif;
+font-family: 'SWLink', sans-serif;
 margin: 0;
 padding: 0;
 }
-h1 {
-text-align: center;
-color: #333;
+
+#logo {
+    text-align: center;
 }
+
+#logo h2 {
+
+}
+
 p {
 margin: 20px;
 font-size: 18px;

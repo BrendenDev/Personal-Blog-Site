@@ -1,0 +1,5 @@
+Background Color = #dddddd
+Nyums Logo Font = Myriad CAD, 48px
+Header Font = SWLink, 28px, #404040
+Post Borders = White, 2px
+Caption Under Logo = Black, SWLink, 18px
