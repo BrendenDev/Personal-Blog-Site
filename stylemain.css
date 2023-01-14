@@ -1,0 +1,92 @@
+@font-face {
+    font-family:'SWLink';
+    src: url('C:\Users\17204\Desktop\Desktop\Coding\BlogPage\SWLink.ttf') format('truetype');
+}
+
+div {
+    border: 1px solid rgb(0,23,0); /*testing*/
+}
+
+body {
+    background-color: #dddddd;
+    font-family: 'SWLink', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33vw;
+    grid-template-rows: 33vh;
+    gap: 5px;
+}
+
+.webhead {
+    text-align: center;
+}
+
+.webhead .logo{
+    width:225px;
+    margin-bottom:-10px;
+}
+
+.webhead h2 {
+    font-size: 18px;
+}
+
+.other-pages {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thoughts-container {
+    background-image: url("C:/Users/17204/Desktop/Desktop/Coding/BlogPage/ThoughtsBKG.png");
+    background-size: cover;
+    background-position: 35% 80%;
+    grid-row: 1;
+}
+
+#projects-container {
+    background-image: url("C:/Users/17204/Desktop/Desktop/Coding/BlogPage/ThoughtsBKG.png");
+    background-size: cover;
+    background-position: 35% 80%;
+    grid-row: 2;
+}
+
+.recent-container {
+    grid-column: 1/ span 2;
+    grid-row: 1/ span3;
+}
+
+.recent-container .posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10vh;
+}
+
+.recent-container .posts a{
+    width: 20px;
+    height: 20px;
+}
+
+.block-head {
+    text-align:center;
+}
+
+p {
+margin: 20px;
+font-size: 18px;
+line-height: 1.5;
+}
+
+a {
+text-decoration: none;
+color: #333;
+}
+
+a:hover {
+color: #0073e6;
+}
