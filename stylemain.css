@@ -3,21 +3,19 @@
     src: url('C:\Users\17204\Desktop\Desktop\Coding\BlogPage\SWLink.ttf') format('truetype');
 }
 
-div {
-    border: 1px solid rgb(0,23,0); /*testing*/
-}
-
-body {
+html, body {
     background-color: #dddddd;
     font-family: 'SWLink', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .container {
+    height: 85%;
     display: grid;
-    grid-template-columns: 33vw;
-    grid-template-rows: 33vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
 }
 
@@ -57,19 +55,29 @@ body {
 
 .recent-container {
     grid-column: 1/ span 2;
-    grid-row: 1/ span3;
+    grid-row: 1/ span 3;
 }
 
 .recent-container .posts {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10vh;
+    gap: 3vh;
 }
 
-.recent-container .posts a{
-    width: 20px;
-    height: 20px;
+.recent-container .posts a{ /* individual post*/
+    display: flex;
+    width:45%;
+    height: 23vh;
+    border: 1px solid rgb(0,23,0); /*testing*/
+    text-decoration: none;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-container .posts a:hover {
+    color: #0073e6;
 }
 
 .block-head {
@@ -80,13 +88,4 @@ p {
 margin: 20px;
 font-size: 18px;
 line-height: 1.5;
-}
-
-a {
-text-decoration: none;
-color: #333;
-}
-
-a:hover {
-color: #0073e6;
 }
