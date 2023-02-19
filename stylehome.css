@@ -1,35 +1,9 @@
-@font-face {
-    font-family:'SWLink';
-    src: url('C:\Users\17204\Desktop\Desktop\Coding\BlogPage\SWLink.ttf') format('truetype');
-}
-
-html, body {
-    background-color: #dddddd;
-    font-family: 'SWLink', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 .container {
     height: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
-}
-
-.webhead {
-    text-align: center;
-}
-
-.webhead .logo{
-    width:225px;
-    margin-bottom:-10px;
-}
-
-.webhead h2 {
-    font-size: 18px;
 }
 
 .other-pages {
@@ -40,17 +14,19 @@ html, body {
 }
 
 #thoughts-container {
-    background-image: url("C:/Users/17204/Desktop/Desktop/Coding/BlogPage/ThoughtsBKG.png");
+    background-image: url("C:/Users/17204/Desktop/Desktop/Coding/BlogPage/page/ThoughtsBKG.png");
     background-size: cover;
     background-position: 35% 80%;
     grid-row: 1;
+    cursor:pointer;
 }
 
 #projects-container {
-    background-image: url("C:/Users/17204/Desktop/Desktop/Coding/BlogPage/ThoughtsBKG.png");
+    background-image: url("C:/Users/17204/Desktop/Desktop/Coding/BlogPage/page/ProjectsBKG.png");
     background-size: cover;
-    background-position: 35% 80%;
+    background-position: 35% 70%;
     grid-row: 2;
+    cursor:pointer;
 }
 
 .recent-container {
@@ -82,10 +58,4 @@ html, body {
 
 .block-head {
     text-align:center;
-}
-
-p {
-margin: 20px;
-font-size: 18px;
-line-height: 1.5;
 }
